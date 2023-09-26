@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            position: relative;
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            position: fixed;
+        }
+        .nav__logo{
+            position: absolute;
+            left: 30px;
+            color: white;
+            top: 5px;
+            font-family: Dancing Script;
+            font-size: 30px;
+        }
+        a{ 
+            color: white;
+        }
+        a:hover{color: rgb(223, 156, 39);}
+        .nav__list{
+            position:absolute;
+            width: 300px;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            left: 45vw;
+            top: 10px;
+
+        }
+        .text{
+            width: 100px;
+            height: 50px;
+            text-decoration: none;
+            color: white;
+        }
+        .nav__orderonline{
+            width: 300px;
+            height: 50px;
+            position: absolute;
+            right: 40px;
+            display: flex;
+            justify-content: space-around;
+            top: 10px;
+        }
+        .orderonline{
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: rgb(223, 156, 39);
+        }
+        .main{
+            width: 100vw;
+        }
+        .main__section--top{
+            background-image: url(./hero-bg.jpg);
+            background-size:auto;
+            width: 100vw;
+            height: 900px;
+            font-size: 30px;
+            padding-top: 300px;
+        }
+        p{
+            padding: 10px;
+            color: white;
+        }
+        .main__section--top--title{
+            font-family:Dancing Script ;
+            font-size: 50px;
+            padding-left: 100px;
+        }
+        .ordernow{
+            margin-top: 20px;
+            margin-left: 110px;
+            width: 200px;
+            height: 50px;
+            border-radius: 15px;
+            background-color: rgb(223, 156, 39);
+        }
+        .main__section--top--click1,.main__section--top--click2,.main__section--top--click3{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.7;
+            display: inline-block;
+            position: absolute;
+            top: 700px;
+            left: 200px;
+        
+            
+        }
+        .main__section--top--click1{
+            margin-left: 50px;
+        }
+        .main__section--top--click2{
+            margin-left: 100px;
+        }
+        .main__section--top--click1:hover{
+            background-color: rgb(223, 156, 39);
+            width: 30px;
+            height: 30px;
+        }
+        .main__section--top--click2:hover{
+            background-color: rgb(223, 156, 39);
+            width: 30px;
+            height: 30px;
+        }
+        .main__section--top--click3:hover{
+            background-color: rgb(223, 156, 39);
+            width: 30px;
+            height: 30px;
+        }
+        .main__section--bot{
+            display: flex;
+            width: 100vw;
+            height: 1500px;
+            font-size: 30px;
+            padding-top: 200px;
+            background-color: rgb(49, 47, 47);
+        }
+        .main__section--bot--text{
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        .main__section--bot--title{
+            font-size: 50px;
+            font-family: Dancing Script ;
+            top: 100px;
+            margin-left: 100px;
+            
+            
+        }
+        .readmore{
+            margin-top: 20px;
+            margin-left: 100px;
+            width: 200px;
+            height: 50px;
+            border-radius: 15px;
+            background-color: rgb(223, 156, 39);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <p class="nav__logo">Rikkei Restaurant</p>
+        <ul class="nav__list"  >
+            <li><a class="nav__list--home text" href="#">Home</a></li>
+            <li><a class="nav__list--menu text" href="#">Menu</a></li>
+            <li><a class="nav__list--about text" href="#">About</a></li>
+            <li><a class="nav__list--booktable text" href="#"> Book Table</a></li>
+        </ul>
+        <div class="nav__orderonline">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <button class="orderonline" >Order Online</button>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="main__section--top">
+        <p class="main__section--top--title">Fast Food Restuarant</p>
+        <p>Doloremque, ittaque apeariam facilis rerum, commodi,temproribus sapienteb ad mollita <br> laborum quam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, nam!</p>
+        <button class="ordernow">Order Now</button>
+        <div class="main__section--top--click1"></div>
+        <div class="main__section--top--click2" ></div>
+        <div class="main__section--top--click3"></div>
+        </section>
+        <section class="main__section--bot">
+            <div class="main__section--bot--text">
+            <p class="main__section--bot--title">We Are Feare</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Nostrum atque velit hic quia et quos praesentium, cupiditate laborum autem cumque?</p>
+            <button class="readmore">Read More</button>
+            </div>
+            <div>
+            <img src="./about-img.png" width="400px" height="600px" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
