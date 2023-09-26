@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            opacity: 0.5;
+        }
+
+        i {
+            display: block;
+            width: 50px;
+        }
+
+        a {
+            width: 100px;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav {
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            padding-top: 20px;
+            position: sticky;
+            top:0;
+            background-color: rgb(237, 234, 229);
+        }
+
+        .logo {
+            width: 500px;
+            font-weight: 600;
+            font-size: 20px;
+            position: absolute;
+            left: 20px;
+        }
+
+        .nav__link {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            right: 100px;
+        }
+
+        .header {
+            width: 100vw;
+            height: 800px;
+            background-image: url(./banner1.jpg);
+            background-size: cover;
+            padding-top: 300px;
+            padding-left: 30px;
+        }
+
+        .header__title {
+            font-size: 100px;
+            width: 200px;
+            height: 200px;
+            font-weight: 700;
+            margin: 30px;
+        }
+
+        .header__shop {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        .main {
+            width: 100vw;
+        }
+
+        .main__section {
+            width: 100vw;
+        }
+
+        .main__section--title {
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            font-size: 30px;
+            justify-content: space-between;
+            padding-top: 7px;
+
+        }
+
+        .main__section--view {
+            font-size: 12px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .main__section--item {
+
+            display: flex;
+            justify-content:space-evenly;
+        }
+       
+        .main__article{
+
+            display: flex;
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+        .color{
+            color: rgb(120, 224, 197);
+            font-size: 20px;
+        }
+        strong{
+            font-size: 50px;
+        }
+        .main__article--item1 {
+            background-image: url(./collection-item1.jpg);
+            background-size:cover;
+            width: 1000px;
+            height: 750px;
+            margin: 30px;
+            padding-top: 200px;
+            padding-left: 450px;
+            
+        }
+
+        .main__article--item2 {
+            background-image: url(./collection-item2.jpg);
+            background-size:cover;
+            width: 400px;
+            height: 360px;
+            margin: 30px;
+            margin-top: 50px;
+            padding-top: 80px;
+            padding-left: 50px;
+        }
+
+        .main__article--item3 {
+            background-image: url(./collection-item3.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            width: 400px;
+            height: 400px;
+            margin: 30px;
+            margin-top: 100px;
+            padding-top: 80px;
+            padding-left: 50px;
+
+        }
+        .opacity{
+            opacity: 0.5;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width:600px) {
+            .contact{
+                display: none;
+            }
+            .nav{
+                height: 120px;
+               display: flex;
+                justify-content: space-around;
+                padding: 0;
+                opacity: 0.7;
+            }
+            .nav__link{
+                display: block;
+                width: 100px;
+                right: 20px;
+                
+            }
+            .logo{
+                width:160px;
+                height: 120px;
+                font-size: 50px;
+                color: goldenrod;
+            }
+            .header{
+                display: none;
+            }
+            .main__section--item{
+                display: block;
+                margin-left: 81px;
+            }
+            .main__section--title{
+                margin-left: 70px;
+            }
+            .main__article{
+                display: block;
+                margin-left: -30px;
+            }
+            .main__article--item1{
+                width: 100vw;
+                height: 500px;
+            }
+            .main__article--item2{
+                width: 100vw;
+            }
+            .main__article--item3{
+                width: 100vw;
+            }
+            .footer{
+                flex-direction: column-reverse;
+                margin-left: 70px;
+                
+            }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contact">
+        <p>Let's talk:<b>0904 694 869</b></p>
+        <p>Free shipping on a purchase valua off $200</p>
+        <div class="contact__login">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-message"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <nav class="nav">
+        <p class="logo">Rikkei Fastion</p>
+        <ul class="nav__link" style="list-style-type: none;">
+            <li><a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        
+
+        <p class="header__title">Summer collection</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus reiciendis maxime non debitis quidem
+            laborum eligendi in dicta dolores placeat.</p>
+        <button class="header__shop">Shop It Now</button>
+
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <div class="main__section--title">
+                <div class="main__section--products">
+                    <p><b>Featured Products</b></p>
+                </div>
+                <div class="main__section--view">
+                    <a href="#">View All Products</a>
+                </div>
+            </div>
+            <div class="main__section--item">
+                <div class="main__section--item1 item ">
+                    <img src="./product-item1.jpg">
+                    <p><b>Full Slieeve Cover Shirt</b></p>
+                    <p class="color">$40.00</p>
+                </div>
+                <div class="main__section--item2 item ">
+                    <img src="./product-item2.jpg">
+                    <p><b>Volunteer Haif Blue</b></p>
+                    <p class="color">$38.00</p>
+                </div>
+                <div class="main__section--item3 item ">
+                    <img src="./product-item3.jpg">
+                    <p><b>Dupble Yellow Shirt</b></p>
+                    <p class="color">$44.00</p>
+                </div>
+                <div class="main__section--item4 item ">
+                    <img src="./product-item4.jpg">
+                    <p>Long Belly Grey Pant</p>
+                    <p class="color">$33.00</p>
+                </div>
+            </div>
+        </section>
+        <article class="main__article">
+            <div class="main__article--item1">
+                <p class="opacity">
+                    CASUAL COLLECTION
+                </p>
+                <Strong>Street Wear.</Strong>
+                <p class="opacity">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, quae.
+                </p>
+                <a href="#"> Shop Collection</a>
+            </div>
+            <div class="main__article--layouright">
+            <div class="main__article--item2">
+                <p class="opacity">BASIC COLLECTION</p>
+                <strong>Basic Shoes.</strong>
+                <a href="#">Shop Collection</a>
+            </div>
+            <div class="main__article--item3">
+                <p class="opacity">BEST SELLING COLLECTION</p>
+                <strong>Woolen Hat.</strong>
+                <a href="#">Shop Collection</a>
+            </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__ultras">
+            <b>Ultrals</b>
+            <p class="opacity">About us</p>
+            <p class="opacity">Condtions</p>
+            <p class="opacity">our Jourals</p>
+            <p class="opacity">Carens</p>
+            <p class="opacity">Affilate Programmer</p>
+            <p class="opacity">Ultras Press</p>
+        </div>
+        <div class="footer__service">
+            <b>Customer Service</b>
+            <p class="opacity">FAQ</p>
+            <p class="opacity">Contact</p>
+            <p class="opacity">Privacy Policy</p>
+            <p class="opacity">Lorem, ipsum.</p>
+            <p class="opacity">lorem</p>
+            <p class="opacity">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="footer__contact">
+            <b>Contact Us</b>
+            <p class="opacity">Lorem ipsum dolor sit amet.</p>
+            <p class="opacity">abcde@gultraus.com</p>
+            <p class="opacity">Lorem ipsum dolor sit amet.</p>
+            <p class="opacity">+84 8772 372</p>
+        </div>
+        <div class="footer__forever">
+            <b>Forever 2018</b>
+            <p class="opacity">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Sequi, blanditiis?</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
